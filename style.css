@@ -612,12 +612,7 @@ footer {
     width: 100%;
     overflow: hidden;
   }
-  .grid-boxes {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
-  }
+
   .skillsLogo {
     display: -ms-grid;
     display: grid;
@@ -689,6 +684,12 @@ footer {
 @media screen and (max-width: 768px) {
   section {
     padding: 60px 0;
+  }
+  .grid-boxes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 
   .navbar {
