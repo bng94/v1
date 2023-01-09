@@ -575,6 +575,12 @@ footer {
     margin: 0 75px;
   }
 
+  .grid-boxes {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+  }
   .navbar {
     padding: 0px;
   }
@@ -635,27 +641,48 @@ footer {
     text-align: center;
   }
 
+  .project-one {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .project-one-img {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
   .project-two {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 4 / 1 / 5 / 2;
   }
 
   .project-two-img {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     -ms-grid-column: 1;
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 3 / 1 / 4 / 2;
   }
 
+  .project-three {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+
+  .project-three-img {
+    grid-area: 4 / 1 / 5 / 2;
+  }
   .project-four {
-    grid-area: 7 / 1 / 8 / 2;
+    grid-area: 8 / 1 / 9 / 2;
   }
 
   .project-four-img {
     text-align: left;
-    grid-area: 8 / 1 / 9 / 2;
+    grid-area: 7 / 1 / 8 / 2;
+  }
+  .project-five {
+    grid-area: 10 / 1 / 11 / 2;
+  }
+
+  .project-five-img {
+    grid-area: 9 / 1 / 10 / 2;
   }
 
   form.contact {
@@ -684,12 +711,6 @@ footer {
 @media screen and (max-width: 768px) {
   section {
     padding: 60px 0;
-  }
-  .grid-boxes {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto;
-    grid-template-columns: auto;
   }
 
   .navbar {
